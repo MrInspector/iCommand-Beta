@@ -1,3 +1,5 @@
+package com.mrinspector.plugin;
+
 import com.mrinspector.plugin.command.Ban;
 import com.mrinspector.plugin.command.Banall;
 import com.mrinspector.plugin.command.Burn;
