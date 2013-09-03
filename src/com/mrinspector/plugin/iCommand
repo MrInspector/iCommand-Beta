@@ -1,0 +1,275 @@
+import com.mrinspector.plugin.command.Ban;
+import com.mrinspector.plugin.command.Banall;
+import com.mrinspector.plugin.command.Burn;
+import com.mrinspector.plugin.command.Ci;
+import com.mrinspector.plugin.command.ClearChat;
+import com.mrinspector.plugin.command.Donate;
+import com.mrinspector.plugin.command.Enchantment;
+import com.mrinspector.plugin.command.Enderchest;
+import com.mrinspector.plugin.command.Enderclear;
+import com.mrinspector.plugin.command.Ext;
+import com.mrinspector.plugin.command.Feed;
+import com.mrinspector.plugin.command.Fire;
+import com.mrinspector.plugin.command.Fly;
+import com.mrinspector.plugin.command.Gamemode;
+import com.mrinspector.plugin.command.God;
+import com.mrinspector.plugin.command.Gohax;
+import com.mrinspector.plugin.command.Heal;
+import com.mrinspector.plugin.command.Infinite;
+import com.mrinspector.plugin.command.Invsee;
+import com.mrinspector.plugin.command.Kick;
+import com.mrinspector.plugin.command.Kickall;
+import com.mrinspector.plugin.command.Kill;
+import com.mrinspector.plugin.command.Killall;
+import com.mrinspector.plugin.command.More;
+import com.mrinspector.plugin.command.Motd;
+import com.mrinspector.plugin.command.PersonalChatClear;
+import com.mrinspector.plugin.command.Ping;
+import com.mrinspector.plugin.command.Pos;
+import com.mrinspector.plugin.command.Repairall;
+import com.mrinspector.plugin.command.Setspawn;
+import com.mrinspector.plugin.command.Spawn;
+import com.mrinspector.plugin.command.Starve;
+import com.mrinspector.plugin.command.Storm;
+import com.mrinspector.plugin.command.Suicide;
+import com.mrinspector.plugin.command.Sun;
+import com.mrinspector.plugin.command.Thunder;
+import com.mrinspector.plugin.command.Tp;
+import com.mrinspector.plugin.command.Tphereall;
+import com.mrinspector.plugin.command.Vote;
+import com.mrinspector.plugin.command.Workbench;
+import com.mrinspector.plugin.command.World;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.bukkit.Bukkit;
+import org.bukkit.Server;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.PluginCommand;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class iCommandB extends JavaPlugin
+  implements Listener
+{
+  public void onEnable()
+  {
+    commandhandler();
+    commandhandler1();
+    commandhandler2();
+    commandhandler3();
+    commandhandler4();
+    commandhandler5();
+    commandhandler6();
+    commandhandler7();
+    commandhandler8();
+    commandhandler9();
+    commandhandler10();
+    commandhandler11();
+    commandhandler12();
+    commandhandler13();
+    commandhandler14();
+    commandhandler15();
+    commandhandler16();
+    commandhandler17();
+    commandhandler18();
+    commandhandler19();
+    commandhandler20();
+    commandhandler21();
+    commandhandler22();
+    commandhandler23();
+    commandhandler24();
+    commandhandler25();
+    commandhandler26();
+    commandhandler27();
+    commandhandler28();
+    commandhandler30();
+    commandhandler31();
+    commandhandler32();
+    commandhandler33();
+    commandhandler34();
+    commandhandler35();
+    commandhandler36();
+    commandhandler37();
+    commandhandler38();
+    commandhandler39();
+    commandhandler40();
+    commandhandler41();
+    getLogger().log(Level.INFO, "Beta Version!");
+    getServer().getPluginManager().registerEvents(this, this);
+  }
+
+  public void commandhandler()
+  {
+    setExecutor("heal", new Heal());
+  }
+
+  public void commandhandler1()
+  {
+    setExecutor("ban", new Ban());
+  }
+
+  public void commandhandler2()
+  {
+    setExecutor("kick", new Kick());
+  }
+
+  public void commandhandler3()
+  {
+    setExecutor("ci", new Ci());
+  }
+
+  public void commandhandler4()
+  {
+    setExecutor("invsee", new Invsee());
+  }
+
+  public void commandhandler5() {
+    setExecutor("gamemode", new Gamemode());
+  }
+
+  public void commandhandler6() {
+    setExecutor("gohax", new Gohax());
+  }
+
+  public void commandhandler7() {
+    setExecutor("vote", new Vote());
+  }
+
+  public void commandhandler8() {
+    setExecutor("donate", new Donate());
+  }
+
+  public void commandhandler9() {
+    setExecutor("fly", new Fly());
+  }
+
+  public void commandhandler10() {
+    setExecutor("feed", new Feed());
+  }
+
+  public void commandhandler11() {
+    setExecutor("enderclear", new Enderclear());
+  }
+
+  public void commandhandler12() {
+    setExecutor("enderchest", new Enderchest());
+  }
+
+  public void commandhandler13() {
+    setExecutor("workbench", new Workbench());
+  }
+
+  public void commandhandler14() {
+    setExecutor("kill", new Kill());
+  }
+
+  public void commandhandler15() {
+    setExecutor("suicide", new Suicide());
+  }
+
+  public void commandhandler16() {
+    setExecutor("motd", new Motd());
+  }
+
+  public void commandhandler17() {
+    setExecutor("pos", new Pos());
+  }
+
+  public void commandhandler18() {
+    setExecutor("storm", new Storm());
+  }
+
+  public void commandhandler19() {
+    setExecutor("sun", new Sun());
+  }
+
+  public void commandhandler20() {
+    setExecutor("fire", new Fire());
+  }
+
+  public void commandhandler21() {
+    setExecutor("burn", new Burn());
+  }
+
+  public void commandhandler22() {
+    setExecutor("ext", new Ext());
+  }
+
+  public void commandhandler23() {
+    setExecutor("enchantment", new Enchantment());
+  }
+
+  public void commandhandler24() {
+    setExecutor("kickall", new Kickall());
+  }
+
+  public void commandhandler25() {
+    setExecutor("killall", new Killall());
+  }
+
+  public void commandhandler26() {
+    setExecutor("banall", new Banall());
+  }
+
+  public void commandhandler27() {
+    setExecutor("tphereall", new Tphereall());
+  }
+
+  public void commandhandler28() {
+    setExecutor("ClearChat", new ClearChat());
+  }
+
+  public void commandhandler30()
+  {
+    setExecutor("repairall", new Repairall());
+  }
+
+  public void commandhandler31() {
+    setExecutor("starve", new Starve());
+  }
+
+  public void commandhandler32() {
+    setExecutor("world", new World());
+  }
+
+  public void commandhandler33() {
+    setExecutor("more", new More());
+  }
+
+  public void commandhandler34() {
+    setExecutor("infinite", new Infinite());
+  }
+
+  public void commandhandler35() {
+    setExecutor("thunder", new Thunder());
+  }
+
+  public void commandhandler36() {
+    setExecutor("god", new God());
+  }
+
+  public void commandhandler37() {
+    setExecutor("ping", new Ping());
+  }
+
+  public void commandhandler38() {
+    setExecutor("personalchatclear", new PersonalChatClear());
+  }
+
+  public void commandhandler39() {
+    setExecutor("tp", new Tp());
+  }
+
+  public void commandhandler40() {
+    setExecutor("setspawn", new Setspawn(this));
+  }
+
+  public void commandhandler41() {
+    setExecutor("spawn", new Spawn(this));
+  }
+
+  public void setExecutor(String command, CommandExecutor ce) {
+    Bukkit.getPluginCommand(command).setExecutor(ce);
+  }
+}
